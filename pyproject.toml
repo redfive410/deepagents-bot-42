@@ -8,5 +8,15 @@ dependencies = [
     "deepagents>=0.7.6",
     "langchain-ollama>=1.1.0",
     "langgraph-cli[inmem]>=0.4.31",
+    "langgraph-sdk>=0.4.2",
     "python-dotenv>=1.2.2",
 ]
+
+[dependency-groups]
+dev = [
+    "anyio>=4.7.0",
+    "pytest>=9.0.3",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
